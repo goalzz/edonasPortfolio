@@ -20,6 +20,9 @@ This is the source code for my portfolio website. It showcases my work, provides
 ### Screenshot
 Here you can find a preview of the deployed app:
 
+![deploymentScreenshot](https://github.com/goalzz/edonasPortfolio/assets/124784722/6b2de3bd-6063-4924-9fd2-4ed8c228fb36)
+
+
 ### Deployment
 
-You can view the deployed website at: 
+You can view the deployed website at: https://goalzz.github.io/edonasPortfolio/
