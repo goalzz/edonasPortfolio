@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Edona Ahmetaj - Portfolio Website (Work in progress)</title> <!--decided to add the 'work in progress' to clarify its status-->
+  <link rel="stylesheet" href="style.css" /> <!--linked html with the css-->
+</head>
+<body>
+  <!-- main logo / nav -->
+  <header>
+    <h1>Edona Ahmetaj</h1> <!--first heading-->
+    <nav>
+      <ul>
+        <li><a href="#aboutGrid">About</a></li>
+        <li><a href="#workGrid">Work</a></li>
+        <li><a href="#contactGrid">Contact</a></li>
+        <li><a href="https://drive.google.com/file/d/1yiIgLWSN7r70c0JubNF9yODG2-FCs8nV/view?usp=drive_link" target="_blank">Resume</a></li>  <!--link will take you to my resume pdf where you can download it-->  <!--used target _blank to open linked documents-->
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-banner">
+    <div class="hero-content">
+    <div class="profile-photo">
+        <img src="assets/images/profile-photo.png" alt="Profile Image of Edona"> <!--added some description to this profile photo (which i will replace later on with a real photo of mine)-->
+      </div>      
+    </div>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+    <!-- about me -->
+    <div class="subHeading">
+        <h2>About Me</h2>
+    </div>
+    <section id="aboutGrid">
+        <div id="aboutMe" class="aboutGridArea">
+            <p>I'm Edona, a London-based enthusiast with a strong background in mathematics. Coding is my passion, and I'm currently honing my skills through a front-end web development bootcamp. I thrive on the logic and creativity that coding offers, and I'm excited to create stunning and user-friendly web experiences. Let's embark on this digital journey together!</p>
+        </div>
+    </section>
+
+    <!-- portfolio container -->
+    <div class="subHeading">
+        <h2>Work</h2>
+    </div>
+    <section id="workGrid">
+        <div id="project1" class="workGridArea">
+            <a href="https://example.com/project1" target="_blank"> <!--used target _blank to open linked documents on another tab-->
+            <div class="heading">Project 1</div>
+            
+        </a>
+        </div>
+        <div id="project2" class="workGridArea">
+            <a href="https://example.com/project2" target="_blank"> <!--used target _blank to open linked documents on another tab-->
+            <div class="heading">Project 2</div>
+            
+        </a>
+        </div>
+        <div id="project3" class="workGridArea">
+            <a href="https://example.com/project1" target="_blank"> <!--used target _blank to open linked documents on another tab-->
+            <div class="heading">Project 3</div>
+        </a>
+        </div>
+        <div id="project4" class="workGridArea">
+            <a href="https://example.com/project4" target="_blank"> <!--used target _blank to open linked documents on another tab-->
+            <div class="heading">Project 4</div>
+        </a>
+        </div>
+        <div id="project5" class="workGridArea">
+            <a href="https://example.com/project5" target="_blank"> <!--used target _blank to open linked documents on another tab-->
+            <div class="heading">Project 5</div>
+        </a>
+        </div>
+    </section>
+
+    <div class="subHeading">
+        <h2>Contact Me</h2>
+    </div>
+    <section id="contactGrid"> 
+        <ul> <!--made an unordered list so it's easier to apply flex on css for this element-->
+        <li id="email" class="contactGridArea">
+            <p><a href="mailto:edonamasur@gmail.com">Email</a></p>
+        </li> <!--when user clicks on "Email" it will let them to send an email to edonamasur@gmail.com directly-->
+        <li id="github" class="contactGridArea">
+            <p><a href="https://github.com/goalzz" target="_blank">GitHub</a></p>
+        </li><!--used target _blank to open linked documents on another tab-->
+        <li id="linkedin" class="contactGridArea">
+            <p><a href="https://www.linkedin.com/in/edona-ahmetaj-210484280" target="_blank">LinkedIn</a></p> <!--used target _blank to open linked documents on another tab-->
+        </li>
+         </ul>
+    </section>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content"> <!--created footer then footer div for easier styling-->
+      <p>&copy; 2023 Created by Edona Ahmetaj</p>
+    </div>
+  </footer>
+</body>
+</html>

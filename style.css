@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  /* Header and navigation CSS*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  
+  nav a {
+    text-decoration: underline;
+    color: white;
+  }
+
+  nav a:hover {
+    text-shadow: 2px 2px 4px rgba(244, 247, 236, 0.9); /*added some shadow when hovering on the list elements*/
+  }
+  
+  /* Hero banner CSS */
+  .hero-banner {
+    background: url('/assets/images/02-hero-bg.jpg') center/cover; /*wallpaper added*/
+    color: white;
+    text-align: right;
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .profile-photo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+.profile-photo img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 48%;
+    border: 2px solid white;
+    max-height: 80vh; /*this will set the maximum height of this element to 80% of the hight of the viewport*/
+    min-width: 100px;
+  }
+
+  .hero-content h2 {
+    margin-top: 30px;
+  }
+
+  /* Work items CSS*/
+  .subheading {
+    text-align: left;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin: 25px 10px;
+    color: rgb(72, 16, 16);
+  }
+
+  #aboutGrid, #workGrid, #contactGrid {
+    margin: 0;
+    width: 80%; 
+    margin-left: 20%; 
+    margin-right: 15%;
+  }
+
+  #workGrid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "project1 project1"
+                         "project2 project3"
+                         "project4 project5";
+    margin: 0;
+    width: 80%;
+    
+    margin-left: 20%;
+    margin-right: 15%;
+  }
+  #project1 {
+    grid-area: project1;
+    background-image: url("assets/images/02-portfolio-1.jpg");
+  }
+
+  #project2 {
+    grid-area: project2;
+    background-image: url("assets/images/02-portfolio-2.jpg");
+  }
+  
+  #project3 {
+    grid-area: project3;
+    background-image: url("assets/images/02-portfolio-3.jpg");
+  }
+  
+  #project4 {
+    grid-area: project4;
+    background-image: url("assets/images/02-portfolio-4.jpg");
+  }
+  
+  #project5 {
+    grid-area: project5;
+    background-image: url("assets/images/02-run-buddy.jpg");
+  }
+
+  .workGridArea {
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .workGridArea a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .workGridArea a:hover {
+    color: inherit;
+  }
+  
+  .heading {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 35px;
+    height: 20px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 30px solid #141313;
+    position: relative;
+    box-sizing:content-box;
+  }
+
+  .workGridArea img {
+    max-width: 100%;
+    max-height: 100%; 
+    width: auto;
+    height: 500px;
+  }
+
+  .workGridArea:hover {    /*when hovering on the application's images, the image enlarges*/
+    transform: scale(1.10); 
+    transition: transform 0.3s; 
+  }
+
+  #contactGrid ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #contactGrid li {
+    margin: 10px 0;
+    display: flex;
+    min-width: 300px;
+    align-items: center;
+  }
+  
+  .contactGridArea a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .contactGridArea a:hover {
+    text-decoration: underline; /*Changes color on hover*/
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  /*Media queries*/
+
+ 
+  @media (max-width: 768px) { /*for smaller screens*/
+    header {
+      flex-direction: column; /*This will stack items vertically for smaller screens*/
+      align-items: center;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    nav {
+      margin-top: 10px; /*This will adjust spacing for smaller screens*/
+    }
+    nav ul {
+      flex-direction: column; /*This will stack nav items vertically for smaller screens*/
+    }
+    nav li {
+      margin: 10px 0; /*This will adjust spacing for smaller screens*/
+      font-size: 15px; /*This will reduce font size for smaller screens*/
+      text-align: center;
+    }
+    .hero-banner {
+      padding: 50px 0; /*This will reduce padding for smaller screens*/
+    }
+    .hero-content {
+      text-align: center;
+    }
+    .profile-photo {
+      position: absolute;
+      margin: 20px 50px;
+    }
+    .hero-content h2 {
+      margin-top: 30px; /*This will reduce margin for smaller screens*/
+    }
+    #contactGrid ul {
+      flex-direction: column; /*This will stack items vertically for smaller screens*/
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { /* For medium-sized screens (iPads, tablets)*/
+    h1 {
+        font-size: 35px;
+    }
+    nav li {
+        font-size: 20px;
+    }
+    .hero-banner {
+        padding: 80px 0;
+    }
+  }
+
+  @media (min-width: 1025px) { /*For large screens (i.e. Desktops)*/
+    h1 {
+        font-size: 45px; /*adjusting larger size for h1*/
+    }
+    nav li {
+        font-size: 25px;  /*adjusting larger size for nav li*/
+    }
+    .hero-banner {
+        padding: 100px 0;
+    }
+  }
+    
