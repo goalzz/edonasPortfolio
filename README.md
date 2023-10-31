@@ -1,9 +1,10 @@
-# Edona Ahmetaj - FrontEnd Web Developer
+# Edona Ahmetaj - Front-End Web Developer
 This is my portfolio website!
 
 ## Description
 
 This is the source code for my portfolio website. It showcases my work, provides information about myself, and offers a means of contact. The website is designed for a front-end web developer portfolio and features a clean, responsive layout.
+
 
 ## Resources 
 
@@ -15,7 +16,9 @@ This is the source code for my portfolio website. It showcases my work, provides
 
 *Angrytools - CSS Grid Generator:* https://angrytools.com/css-grid/  
 
+
 ### Screenshot
+Here you can find a preview of the deployed app:
 
 ### Deployment
 
