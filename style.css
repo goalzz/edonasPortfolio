@@ -54,7 +54,7 @@
   
   /* Hero banner CSS */
   .hero-banner {
-    background: url('/assets/images/02-hero-bg.jpg') center/cover; /*wallpaper added*/
+    background: url('assets/images/02-hero-bg.jpg') center/cover; /*wallpaper added*/
     color: white;
     text-align: right;
     padding: 100px 0;
